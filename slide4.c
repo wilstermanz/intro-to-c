@@ -1,11 +1,8 @@
 /* Let's make a Fahrenheit to Celsius conversion table */
-/* #include standard libary */
+/* #include standard libary  and header file */
 #include <stdio.h>
 #include "head.h"
 
-/* #define NAME value */
-
-/* function declarations */
 
 /* print table for F = 0, 20, ..., 300 */
 int main(void)
@@ -15,7 +12,7 @@ int main(void)
 	float F, C;
 
 	float lower = 0; 	/* lower limit of temp table */
-	float upper = 300;/* upper limit of temp table */
+	float upper = 300;	/* upper limit of temp table */
 	float step = 20;	/* step size */
 
 	/* Use a loop */
@@ -35,8 +32,8 @@ int main(void)
 		printf("%10.2f\t%10.2f\n", C, F);
 	}
 
-	return (0);
 	/* Return 0 */
+	return (0);
 }
 
 /* Convert F to C using formula C = (5/9)(F-32) */
@@ -50,6 +47,7 @@ float FtoC(float F)
 }
 
 
+/* Convert C to F using formula F = C(9/5) + 32 */
 /**
  * description
  * @C: a float in degrees celsius
@@ -63,11 +61,8 @@ float CtoF(float C)
 
 	return (F);
 }
+
 /**
  * Discussion:
  *	- integer math
 */
-
-/* Convert C to F using formula F = C(9/5) + 32 */
-
-/* comment in here */
